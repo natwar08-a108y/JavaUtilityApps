@@ -1,10 +1,10 @@
-# 🛠️ Java Multi-Utility Application
+# 🛠️ Java Multi-Utility Terminal Application
 
 A robust, menu-driven console application built entirely in Java. This project follows a clean, modular architecture, integrating various daily utility tools into a single, cohesive program. 
 
 ## 🌟 Modules Included
 
-This application consists of 7 independent modules managed through a central unified menu:
+This Terminal program consists of 7 independent modules managed through a central unified menu:
 
 * **🖩 Calculator:** Performs fundamental mathematical operations with precise logic.
 * **📅 Calendar:** Displays dates and manages events/holidays using file reading operations.
