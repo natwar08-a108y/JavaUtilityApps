@@ -1,5 +1,7 @@
 package main;
 
+import java.io.*;
+import java.util.*;
 import modules.calculator.Calculator;
 import modules.calendar.Calendar;
 import modules.music.Music;
@@ -19,6 +21,28 @@ public class Main {
         int choice;
 
         do {
+            List<String> quotes = new ArrayList<>();
+
+            try {
+                BufferedReader br = new BufferedReader(new FileReader("src/modules/calendar/quotes.txt"));
+
+                String line;
+                while ((line = br.readLine()) != null) {
+                    if (!line.isBlank()) {
+                        quotes.add(line);
+                    }
+                }
+
+                br.close();
+
+                Random random = new Random();
+                String quote = quotes.get(random.nextInt(quotes.size()));
+
+                System.out.println("\n" + quote);
+
+            } catch (IOException e) {
+                System.out.println("Error reading quotes.txt");
+            }
             showMenu();
             choice = getChoice();
 
