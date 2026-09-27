@@ -4,7 +4,7 @@ A robust, menu-driven console application built entirely in Java. This project f
 
 ## 🌟 Modules Included
 
-This Terminal program consists of 7 independent modules managed through a central unified menu:
+This Terminal program consists of 7 independent modules managed through a central unified menu through Main.java:
 
 * **🖩 Calculator:** Performs fundamental mathematical operations with precise logic.
 * **📅 Calendar:** Displays dates and manages events/holidays using file reading operations.
